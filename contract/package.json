@@ -1,0 +1,26 @@
+{
+  "name": "op-face-contract",
+  "version": "1.0.0",
+  "description": "OP Face NFT Smart Contract for OP_NET",
+  "type": "module",
+  "scripts": {
+    "build": "asc src/index.ts --target release --measure --uncheckedBehavior never",
+    "build:debug": "asc src/index.ts --target debug --measure",
+    "deploy": "ts-node scripts/deploy.ts --network testnet",
+    "deploy:regtest": "ts-node scripts/deploy.ts --network regtest"
+  },
+  "dependencies": {
+    "@btc-vision/as-bignum": "^0.0.7",
+    "@btc-vision/bitcoin": "^6.5.6",
+    "@btc-vision/btc-runtime": "^1.10.12",
+    "@btc-vision/opnet-transform": "^0.2.1",
+    "@btc-vision/transaction": "^1.7.31",
+    "@noble/hashes": "^1.8.0",
+    "opnet": "^1.8.0"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.27.34",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}

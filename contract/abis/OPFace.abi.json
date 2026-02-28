@@ -1,0 +1,75 @@
+{
+    "functions": [
+        {
+            "name": "mint",
+            "type": "Function",
+            "inputs": [
+                {
+                    "name": "tokenURI",
+                    "type": "STRING"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "tokenId",
+                    "type": "UINT256"
+                }
+            ]
+        },
+        {
+            "name": "minterOf",
+            "type": "Function",
+            "inputs": [
+                {
+                    "name": "tokenId",
+                    "type": "UINT256"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "minter",
+                    "type": "ADDRESS"
+                }
+            ]
+        },
+        {
+            "name": "mintedAt",
+            "type": "Function",
+            "inputs": [
+                {
+                    "name": "tokenId",
+                    "type": "UINT256"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "blockNumber",
+                    "type": "UINT256"
+                }
+            ]
+        },
+        {
+            "name": "mintPrice",
+            "type": "Function",
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "price",
+                    "type": "UINT256"
+                }
+            ]
+        },
+        {
+            "name": "treasury",
+            "type": "Function",
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "treasury",
+                    "type": "STRING"
+                }
+            ]
+        }
+    ],
+    "events": []
+}
